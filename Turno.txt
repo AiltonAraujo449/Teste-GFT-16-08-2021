@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class turnos
+{
+public static void main(String args[])
+{Scanner entrada = new Scanner (System.in);
+char opcao;
+System.out.println("Em qual turno você trabalha? (m=matutino, t=tarde ou n=noturno)");
+opcao=entrada.next().charAt(0);
+if(opcao == 'm' || opcao == 'M')
+{
+	System.out.println("Bom dia!");
+}
+
+else if(opcao == 't' || opcao == 'T' )
+{
+	System.out.println("Boa tarde!");
+}
+else if(opcao == 'n' || opcao == 'N');
+{
+	System.out.println("Boa noite!");
+}
+
+{
+	System.out.println("Valor Inválido!");
+}
+}
+}

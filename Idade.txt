@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Idade {
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+        
+        int idade, cont = 1;
+        int idadeY = 0;
+        double alturaX, somaAltura;		
+        do{
+            System.out.println("Digite uma idade");
+            idade = entrada.nextInt();
+            
+                        
+            if(idade > 60){
+                idadeY++; 
+            }
+            
+            else
+            if( (idade >= 45) && (idade <= 59) ){
+                
+            }
+            
+            cont++;
+            System.out.println("\n");
+        }while(cont <= 4);
+        
+        if(idadeY > 0){
+            
+            System.out.println("Qntde de pessoas com idade acima de 60 anos: " + idadeY + "\n");
+        } else{
+            
+            System.out.println("Nenhuma pessoa tem acima de 60 anos \n");
+        }
+        
+        if(alturaX > 0){
+            
+            System.out.println("A média de pessoas entre 10 e 20 anos é: " + (somaAltura / alturaX) + "\n");
+        } else{
+            
+            System.out.println("Nenhuma pessoa tem idade entre 10 e 20 anos \n");
+        }
+        
+        }
+    }
+}
